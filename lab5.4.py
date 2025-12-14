@@ -16,7 +16,7 @@ database = [
 columns = ["Прізвище", "Ім'я", "Вік", "К-сть фільмів", "Статки ($)"]
 
 while True:
-    console.print("\n[bold cyan]--- ГОЛОВНЕ МЕНЮ ---[/bold cyan]")
+    console.print("\n[bold cyan] ГОЛОВНЕ МЕНЮ [/bold cyan]")
     console.print("[green]1[/green] - Друк списку")
     console.print("[green]2[/green] - Додати елемент до списку")
     console.print(
@@ -76,7 +76,7 @@ while True:
             for i, col in enumerate(columns, 1):
                 console.print(f"[green]{i}[/green] - {col}")
 
-            console.print("[dim]Натисніть цифру...[/dim]")
+            console.print("[dim]Натисніть цифру [/dim]")
 
             attr_event = keyboard.read_event(suppress=True)
             if attr_event.event_type == keyboard.KEY_DOWN:
@@ -212,4 +212,5 @@ while True:
 
         elif choice == '7' or choice.lower() == 'q':
             console.print("[bold red]Роботу завершено.[/bold red]")
+
             break
